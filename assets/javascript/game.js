@@ -16,14 +16,17 @@
 	//the loss counter is increased by 1
 	//the game resets
 
-$( document ).ready() {
+window.onload = function() {
 
-var random number = Math.floor((Math.random() * 120) + 19);
+	var randomNumber = Math.floor((Math.random() * 120) + 19);
 
-var green;
-var yellow;
-var blue;
-var red;
+	$("#green").click();
+	$("#yellow").click();
+	$("#blue").click();
+	$("#ready").click();
+
+	console.log(randomNumber);
+
 
 var wins;
 var losses;
