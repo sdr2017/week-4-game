@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	background: #ffffff;
+	line-height: 100px;
+}
+
+#instructions {
+	height: auto;
+	background: #fff;
+}
+
+#randomNumber {
+	height: 100px;
+	background: #b9d9ea;
+}
+
+#yourNumber {
+	height: 100px;
+	background: #efefbf;
+}
+
+#crystals {
+	margin: 20px;
+}
+
+.crystal {
+	width: 100%;
+}
