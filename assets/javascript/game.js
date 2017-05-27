@@ -20,10 +20,8 @@
 
 window.onload = function() {
 
-	var wins;
+	var wins = 0;
 	var losses = 0;
-		$("#losses").html("Losses: " + losses);
-
 	var points = 0;
 
 	var randomNumber = Math.floor((Math.random() * 120) + 19);
@@ -70,9 +68,16 @@ window.onload = function() {
 		$("#displayPoints").html("Your Total: " + (points));
 
 			if (points > randomNumber) {
+				alert("You Lose!");
 				losses ++;
-
+				$("#losses").html("Losses: " + losses);
 				}
+
+			if (points == randomNumber) {
+				alert("You Won!");
+				wins ++;
+				$("#wins").html("Wins: " + wins);	
+			}
 	});
 
 	
