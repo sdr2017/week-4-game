@@ -60,8 +60,8 @@ window.onload = function() {
 	$(".crystal").on("click", function() {
 		console.log(this);
 		var value = $(this).attr('value');
-		console.log(value);
-		var total = points + value;
+		valueNumber = parseInt(value);
+		var total = points + valueNumber;
 		$("#displayPoints").html("Your Total: " + (total));
 	});
 
