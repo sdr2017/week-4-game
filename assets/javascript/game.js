@@ -21,7 +21,8 @@
 window.onload = function() {
 
 	var wins;
-	var losses;
+	var losses = 0;
+		$("#losses").html("Losses: " + losses);
 
 	var points = 0;
 
@@ -58,11 +59,20 @@ window.onload = function() {
 		}*/
 
 	$(".crystal").on("click", function() {
+		//grabbing the value of the crystal clicked from HTML
 		var value = $(this).attr('value');
+		//converting that value from a string to an integer
 		valueNumber = parseInt(value);
 		console.log(valueNumber);
+		//adding the integer to the points total
 		points += valueNumber;
+		//displaying the total in the dom
 		$("#displayPoints").html("Your Total: " + (points));
+
+			if (points > randomNumber) {
+				losses ++;
+
+				}
 	});
 
 	

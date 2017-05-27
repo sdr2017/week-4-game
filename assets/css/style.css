@@ -4,17 +4,31 @@ h1 {
 	line-height: 100px;
 }
 
+h3 {
+	line-height: 10px;
+}
+
 #instructions {
 	height: auto;
 	background: #fff;
 }
 
-#randomNumber {
+#winBox {
+	height: 50px;
+	background: #eab8c9;
+}
+
+#loseBox {
+	height: 50px;
+	background: #b8ecb8;
+}
+
+#randomBox {
 	height: 100px;
 	background: #b9d9ea;
 }
 
-#yourNumber {
+#yourBox {
 	height: 100px;
 	background: #efefbf;
 }
