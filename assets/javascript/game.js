@@ -18,7 +18,13 @@
 
 window.onload = function() {
 
+	var wins;
+	var losses;
+
+	var points;
+
 	var randomNumber = Math.floor((Math.random() * 120) + 19);
+		$("#displayNumber").html("Random Number: " + randomNumber);
 
 	var green = Math.floor((Math.random() * 12) + 1);
 	var yellow = Math.floor((Math.random() * 12) + 1);
@@ -38,10 +44,6 @@ window.onload = function() {
 	console.log(red);
 
 
-var wins;
-var losses;
-
-var points;
 
 
 //$("#crystals").on("click", function() {
