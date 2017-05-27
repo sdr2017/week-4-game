@@ -1,36 +1,56 @@
+.topBar{
+	height: 10px;
+}
+
+#redBar{
+	background: #eab8c9;
+}
+
+#blueBar{
+	background: #b8d9ea;
+}
+
+#yellowBar{
+	background: #eeeebe;
+}
+
+#greenBar{
+	background: #b8ecb8;
+}
+
 h1 {
 	text-align: center;
 	background: #ffffff;
 	line-height: 100px;
+	margin:20px 0px 20px 0px;
+	border: solid 4px #333;
 }
 
 h3 {
-	line-height: 10px;
+	line-height: 5px;
+}
+
+#heading {
+	padding: 0px;
 }
 
 #instructions {
 	height: auto;
 	background: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: solid 4px #333;
 }
 
-#winBox {
+#title {
+	margin: 0px 0px 20px 0px;
+}
+
+#winBox, #loseBox, #randomBox, #yourBox {
 	height: 50px;
-	background: #eab8c9;
-}
-
-#loseBox {
-	height: 50px;
-	background: #b8ecb8;
-}
-
-#randomBox {
-	height: 100px;
-	background: #b9d9ea;
-}
-
-#yourBox {
-	height: 100px;
-	background: #efefbf;
+	background: #fff;
+	border: solid 4px #333;
+	margin-bottom: 20px;
 }
 
 #crystals {
