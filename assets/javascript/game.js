@@ -23,8 +23,10 @@ window.onload = function() {
 	var wins = 0;
 	var losses = 0;
 	var points = 0;
+	reset();
+	
 
-	var randomNumber = Math.floor((Math.random() * 120) + 19);
+	/*var randomNumber = Math.floor((Math.random() * 120) + 19);
 		$("#displayNumber").html("Random Number: " + randomNumber);
 
 	var green = Math.floor((Math.random() * 12) + 1);
@@ -47,7 +49,7 @@ window.onload = function() {
 
 	    $("#red").attr({
 	        "value" : red,
-	    });
+	    }); */
 
 	//trying to assign a value of 1 to a random crystal if no crystal equals 1
 	/*var crystals = [green, yellow, blue, red];
@@ -57,24 +59,28 @@ window.onload = function() {
 		}*/
 
 	$(".crystal").on("click", function() {
-		//grabbing the value of the crystal clicked from HTML
+		var goal = $("#displayNumber").attr('value');
+		var goalNumber = parseInt(goal);
+		console.log(goalNumber);
+			//grabbing the value of the crystal clicked from HTML
 		var value = $(this).attr('value');
-		//converting that value from a string to an integer
+			//converting that value from a string to an integer
 		valueNumber = parseInt(value);
-		console.log(valueNumber);
-		//adding the integer to the points total
+			//adding the integer to the points total
 		points += valueNumber;
-		//displaying the total in the dom
+			//displaying the total in the dom
 		$("#displayPoints").html("Your Total: " + (points));
+			    console.log(points);
 
-			if (points > randomNumber) {
+
+			if (points > goalNumber) {
 				reset();
 				alert("You Lose!");
 				losses ++;
 				$("#losses").html("Losses: " + losses);
 				}
 
-			if (points == randomNumber) {
+			if (points == goalNumber) {
 				reset();
 				alert("You Won!");
 				wins ++;
@@ -89,7 +95,11 @@ window.onload = function() {
 		$("#displayPoints").html("Your Total: " + (points));
 
 		var randomNumber = Math.floor((Math.random() * 120) + 19);
-		$("#displayNumber").html("Random Number: " + randomNumber);
+			$("#displayNumber").html("Random Number: " + randomNumber);
+
+			$("#displayNumber").attr({
+			"value" : randomNumber,
+			})
 
 		var green = Math.floor((Math.random() * 12) + 1);
 		var yellow = Math.floor((Math.random() * 12) + 1);
@@ -111,6 +121,7 @@ window.onload = function() {
 	    $("#red").attr({
 	        "value" : red,
 	    });
+	    console.log(randomNumber);
 	}
 	
 
