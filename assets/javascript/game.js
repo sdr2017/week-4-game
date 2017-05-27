@@ -68,23 +68,53 @@ window.onload = function() {
 		$("#displayPoints").html("Your Total: " + (points));
 
 			if (points > randomNumber) {
+				reset();
 				alert("You Lose!");
 				losses ++;
 				$("#losses").html("Losses: " + losses);
 				}
 
 			if (points == randomNumber) {
+				reset();
 				alert("You Won!");
 				wins ++;
 				$("#wins").html("Wins: " + wins);	
 			}
 	});
 
+
+	function reset() {
+
+		points = 0;
+		$("#displayPoints").html("Your Total: " + (points));
+
+		var randomNumber = Math.floor((Math.random() * 120) + 19);
+		$("#displayNumber").html("Random Number: " + randomNumber);
+
+		var green = Math.floor((Math.random() * 12) + 1);
+		var yellow = Math.floor((Math.random() * 12) + 1);
+		var blue = Math.floor((Math.random() * 12) + 1);
+		var red = Math.floor((Math.random() * 12) + 1);
+
+		$("#green").attr({
+	        "value" : green,
+	    });
+
+	    $("#yellow").attr({
+	        "value" : yellow,
+	    });
+
+	    $("#blue").attr({
+	        "value" : blue,
+	    });
+
+	    $("#red").attr({
+	        "value" : red,
+	    });
+	}
 	
 
 
-
-	console.log(points);
 
 
 
