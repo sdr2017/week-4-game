@@ -20,12 +20,22 @@ window.onload = function() {
 
 	var randomNumber = Math.floor((Math.random() * 120) + 19);
 
+	var green = Math.floor((Math.random() * 12) + 1);
+	var yellow = Math.floor((Math.random() * 12) + 1);
+	var blue = Math.floor((Math.random() * 12) + 1);
+	var red = Math.floor((Math.random() * 12) + 1);
+
+
 	$("#green").click();
 	$("#yellow").click();
 	$("#blue").click();
-	$("#ready").click();
+	$("#red").click();
 
 	console.log(randomNumber);
+	console.log(green);
+	console.log(yellow);
+	console.log(blue);
+	console.log(red);
 
 
 var wins;
