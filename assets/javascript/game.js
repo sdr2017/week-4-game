@@ -58,11 +58,11 @@ window.onload = function() {
 		}*/
 
 	$(".crystal").on("click", function() {
-		console.log(this);
 		var value = $(this).attr('value');
 		valueNumber = parseInt(value);
-		var total = points + valueNumber;
-		$("#displayPoints").html("Your Total: " + (total));
+		console.log(valueNumber);
+		points += valueNumber;
+		$("#displayPoints").html("Your Total: " + (points));
 	});
 
 	
