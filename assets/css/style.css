@@ -102,6 +102,10 @@ h3 {
 	#crystals {
 		margin: 0px;
 	}
+
+	.col-xs-3 {
+		padding: 5px;
+	}
 	
 
 }
