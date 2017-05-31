@@ -72,7 +72,7 @@ h3 {
 		width: 100%;
 	}
 
-	#displayNumber {
+	#displayNumber, #displayPoints {
 		line-height: 30px;
 		margin: auto;
 	}
@@ -88,13 +88,13 @@ h3 {
 	}
 
 	#randomBox {
-		height: 75px;
+		height: 100px;
 		width: 47%;
 		margin-right: 3%;
 	}
 
 	#yourBox {
-		height: 75px;
+		height: 100px;
 		width: 47%;
 		margin-left: 3%;
 	}
